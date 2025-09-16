@@ -1,0 +1,8 @@
+*.fig
+*.avi
+*.mat
+*.png
+*.pdf
+*.svg
+data/
+videos/
