@@ -8,9 +8,9 @@
 % Run comparison_propagation_methods_plot.m to recreate Fig. 6.2 of my
 % thesis.
 %
-% NOTE: this scripts requires the installation of k-Wave.
-% Adjust the variable PATHS.kWave in path_setup_calibration to match the
-% location of k-Wave.
+% NOTE: this scripts requires the installation of k-Wave. Adjust the
+% variable PATHS.kWave in path_setup_characterization to match the location
+% of k-Wave.
 % Adjust the variable PATHS.PROTEUS to match the location of the root
 % directory of the PROTEUS repository.
 %
@@ -38,7 +38,7 @@ currentDirectory = fileparts(mfilename('fullpath'));
 rootDirectory = fileparts(currentDirectory);
 resultsDirectory = fullfile(currentDirectory,'data');
 addpath(rootDirectory); clear currentDirectory rootDirectory
-PATHS = path_setup_calibration();
+PATHS = path_setup_characterization();
 
 if strcmp(sourceType,'dipole')
     savename1 = 'sensor_data_dipole_rayleigh.mat';

@@ -1,4 +1,4 @@
-function PATHS = path_setup_calibration(varargin)
+function PATHS = path_setup_characterization(varargin)
 % Load paths to modules and data files
 %
 % For installation: modify the variable PATHS.AcousticModule to correspond
@@ -7,12 +7,12 @@ function PATHS = path_setup_calibration(varargin)
 % The paths PATHS.kWave and PATHS.PROTEUS are optional and can be left
 % empty ('').
 %
-% Running PATHS = path_setup_calibration() or PATHS =
-% path_setup_calibration('addpath') adds the required folders to the MATLAB
-% path.
+% Running PATHS = path_setup_characterization() or PATHS =
+% path_setup_characterization('addpath') adds the required folders to the
+% MATLAB path.
 %
-% Running PATHS = path_setup_calibration('rmpath') removes these folders
-% from the MATLAB path again.
+% Running PATHS = path_setup_characterization('rmpath') removes these
+% folders from the MATLAB path again.
 %
 % This file is part of the transducer-calibration project, licensed under
 % the GNU Lesser General Public License v3.0 (LGPL-3.0).

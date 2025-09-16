@@ -43,7 +43,7 @@ t2 = t1 + 0.15e-6;
 currentDirectory = fileparts(mfilename('fullpath'));
 rootDirectory = fileparts(currentDirectory);
 addpath(rootDirectory); clear currentDirectory rootDirectory
-PATHS = path_setup_calibration();
+PATHS = path_setup_characterization();
 
 %==========================================================================
 % LOAD PRESSURE DATA AND REVERSE LENS DELAYS

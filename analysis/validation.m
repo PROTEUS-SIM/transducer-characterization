@@ -38,7 +38,7 @@ maxPressure_kPa = 500;
 currentDirectory = fileparts(mfilename('fullpath'));
 rootDirectory = fileparts(currentDirectory);
 addpath(rootDirectory); clear rootDirectory
-PATHS = path_setup_calibration();
+PATHS = path_setup_characterization();
 
 savefolder = 'pressure-maps-PROTEUS';
 

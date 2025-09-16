@@ -17,7 +17,7 @@ saveFigure = false;
 currentDirectory = fileparts(mfilename('fullpath'));
 rootDirectory = fileparts(currentDirectory);
 addpath(rootDirectory); clear currentDirectory rootDirectory
-PATHS = path_setup_calibration();
+PATHS = path_setup_characterization();
 
 if saveFigure == true
     d1 = 20e-3;  % Propagation distance 1 [m]

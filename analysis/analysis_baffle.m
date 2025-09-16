@@ -39,7 +39,7 @@ sensor.points = [10 0 5]*1e-3;
 currentDirectory = fileparts(mfilename('fullpath'));
 rootDirectory = fileparts(currentDirectory);
 addpath(rootDirectory); clear currentDirectory rootDirectory
-PATHS = path_setup_calibration();
+PATHS = path_setup_characterization();
 
 load(fullfile(PATHS.Results,'IR_transmit.mat'),'IR','Fs')
 Tmax = 2e-6;

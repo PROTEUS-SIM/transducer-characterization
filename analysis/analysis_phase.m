@@ -30,7 +30,7 @@ saveFigure = false;
 currentDirectory = fileparts(mfilename('fullpath'));
 rootDirectory = fileparts(currentDirectory);
 addpath(rootDirectory); clear currentDirectory rootDirectory
-PATHS = path_setup_calibration();
+PATHS = path_setup_characterization();
 
 % Hydrophone sensitivity data file
 sensfile = fullfile(PATHS.Data,'sensitivity.mat');

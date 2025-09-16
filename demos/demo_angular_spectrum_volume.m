@@ -15,7 +15,7 @@ clear; clc
 currentDirectory = fileparts(mfilename('fullpath'));
 rootDirectory = fileparts(currentDirectory);
 addpath(rootDirectory); clear currentDirectory rootDirectory
-PATHS = path_setup_calibration();
+PATHS = path_setup_characterization();
 
 load('GUI_output_parameters.mat', 'Geometry', ...
     'Medium', 'SimulationParameters', 'Transducer', 'Transmit')

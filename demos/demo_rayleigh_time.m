@@ -17,7 +17,7 @@ useGPU = true;
 currentDirectory = fileparts(mfilename('fullpath'));
 rootDirectory = fileparts(currentDirectory);
 addpath(rootDirectory); clear currentDirectory rootDirectory
-path_setup_calibration;
+path_setup_characterization;
 
 load('GUI_output_parameters.mat', 'Geometry', ...
     'Medium', 'SimulationParameters', 'Transducer', 'Transmit')

@@ -20,7 +20,7 @@ currentDirectory = fileparts(mfilename('fullpath'));
 rootDirectory = fileparts(currentDirectory);
 resultsDirectory = fullfile(currentDirectory,'data');
 addpath(rootDirectory); clear currentDirectory rootDirectory
-PATHS = path_setup_calibration();
+PATHS = path_setup_characterization();
 
 savename = 'example_sensor_data.mat';
 

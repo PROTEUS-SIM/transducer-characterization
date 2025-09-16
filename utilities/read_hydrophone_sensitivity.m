@@ -13,7 +13,7 @@ clear; clc
 currentDirectory = fileparts(mfilename('fullpath'));
 rootDirectory = fileparts(currentDirectory);
 addpath(rootDirectory); clear currentDirectory
-PATHS = path_setup_calibration();
+PATHS = path_setup_characterization();
 
 % Location of the Precision Acoustics sensitivity data:
 filename = fullfile(fileparts(rootDirectory),...

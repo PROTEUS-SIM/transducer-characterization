@@ -14,7 +14,7 @@ clear; clc; close all
 currentDirectory = fileparts(mfilename('fullpath'));
 rootDirectory = fileparts(currentDirectory);
 addpath(rootDirectory); clear currentDirectory rootDirectory
-path_setup_calibration;
+path_setup_characterization;
 
 useGPU = true;
 

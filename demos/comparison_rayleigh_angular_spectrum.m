@@ -14,7 +14,7 @@ clear; clc; close all
 currentDirectory = fileparts(mfilename('fullpath'));
 rootDirectory = fileparts(currentDirectory);
 addpath(rootDirectory); clear currentDirectory rootDirectory
-path_setup_calibration;
+path_setup_characterization;
 
 % Distance between source plane and sensor plane [m]:
 d = 0.075;

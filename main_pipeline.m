@@ -47,7 +47,7 @@ close all
 % parameter estimation:
 N_iterations = 2;
 
-PATHS = path_setup_calibration();
+PATHS = path_setup_characterization();
 
 showFigures = true;
 saveFigures = false;

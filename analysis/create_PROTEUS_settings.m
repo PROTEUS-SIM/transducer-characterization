@@ -15,7 +15,7 @@ clear; clc; close all
 currentDirectory = fileparts(mfilename('fullpath'));
 rootDirectory = fileparts(currentDirectory);
 addpath(rootDirectory); clear rootDirectory
-PATHS = path_setup_calibration();
+PATHS = path_setup_characterization();
 
 addpath(PATHS.PROTEUS)
 PATHS_PROTEUS = path_setup();

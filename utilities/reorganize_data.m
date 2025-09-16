@@ -23,7 +23,7 @@ clc
 currentDirectory = fileparts(mfilename('fullpath'));
 rootDirectory = fileparts(currentDirectory);
 addpath(rootDirectory); clear currentDirectory
-PATHS = path_setup_calibration();
+PATHS = path_setup_characterization();
 
 saveNameScanFull = fullfile(PATHS.Data,'FullScanData.mat');
 saveNameScan     = fullfile(PATHS.Data,'ScanData.mat');

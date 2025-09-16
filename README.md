@@ -55,7 +55,7 @@ if you intend to reproduce Fig. 6.2 of my thesis.
 
 After installation of PROTEUS, navigate back to the current repository ([`transducer-calibration`](.)).
 
-Modify the variable `PATHS.AcousticModule` in the file [`path_setup_calibration.m`](path_setup_calibration.m)
+Modify the variable `PATHS.AcousticModule` in the file [`path_setup_characterization.m`](path_setup_characterization.m)
 to match the location of the PROTEUS acoustic module on your computer.
 ```
 PATHS.AcousticModule = '/home/user/PROTEUS/acoustic-module'; % Replace by your own path
@@ -63,11 +63,11 @@ PATHS.AcousticModule = '/home/user/PROTEUS/acoustic-module'; % Replace by your o
 
 To add all required directories to the MATLAB path, run the file from the MATLAB command window:
 ```
-path_setup_calibration
+path_setup_characterization
 ```
 To remove those directories again, run:
 ```
-path_setup_calibration('rmpath')
+path_setup_characterization('rmpath')
 ```
 
 

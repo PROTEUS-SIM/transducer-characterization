@@ -17,7 +17,7 @@ currentDirectory = fileparts(mfilename('fullpath'));
 rootDirectory = fileparts(currentDirectory);
 resultsDirectory = fullfile(currentDirectory,'data');
 addpath(rootDirectory); clear currentDirectory rootDirectory
-path_setup_calibration;
+path_setup_characterization;
 
 savename = 'example_sensor_data.mat';
 
