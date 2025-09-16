@@ -21,7 +21,7 @@ of my thesis (doi: [10.3990/1.9789036564052](https://doi.org/10.3990/1.978903656
 
 Clone the current repository with git.
 ```
-git clone https://github.com/NathanBlanken/transducer-calibration.git
+git clone https://github.com/NathanBlanken/transducer-characterization.git
 ```
 
 ### PROTEUS acoustic module
@@ -44,7 +44,7 @@ This branched will be merged with the
 
 **Note:** a [full](https://github.com/PROTEUS-SIM/PROTEUS?tab=readme-ov-file#installation-of-the-simulator)
 installation of PROTEUS, including k-Wave, geometry data, flow solver, and vtkToolbox, is **not** required
-if you are only going use it for transducer calibration.
+if you are only going use it for transducer characterization.
 
 **Note (optional):** installation of [k-Wave](https://github.com/PROTEUS-SIM/PROTEUS?tab=readme-ov-file#k-wave) is required
 if you intend to reproduce Fig. 6.2 of my thesis.
@@ -53,7 +53,7 @@ if you intend to reproduce Fig. 6.2 of my thesis.
 
 ### Path variables
 
-After installation of PROTEUS, navigate back to the current repository ([`transducer-calibration`](.)).
+After installation of PROTEUS, navigate back to the current repository ([`transducer-characterization`](.)).
 
 Modify the variable `PATHS.AcousticModule` in the file [`path_setup_characterization.m`](path_setup_characterization.m)
 to match the location of the PROTEUS acoustic module on your computer.
@@ -129,10 +129,10 @@ By contrast, PROTEUS currently uses a Cartesian coordinate system with *x*-axis 
 The folder `utilities` contains tools for switching smoothly between the two systems.
 See [`demos`](demos) for further information.
 
-### Applying the pipeline to new transducer calibration data
+### Applying the pipeline to new transducer characterization data
 
 Note that `main_pipeline.m` is a prototype framework, not an out-of-the-box tool
-for transducer calibration.
+for transducer characterization.
 Applying `main_pipeline.m` to new data requires fine-tuning of the computational steps,
 in particular the parameters at the top of each of these files:
  - `compute_receive_impulse_response.m`
