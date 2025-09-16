@@ -12,8 +12,8 @@ function [Y, rmin] = rayleigh_propagation(...
 % - rmin: offset distance used in Rayleigh integral, see
 %         rayleigh_integral_frequency
 %
-% This file is part of the transducer-calibration project, licensed under
-% the GNU Lesser General Public License v3.0 (LGPL-3.0).
+% This file is part of the transducer-characterization project, licensed
+% under the GNU Lesser General Public License v3.0 (LGPL-3.0).
 % See the LICENSE file for further details.
 % Copyright (C) 2025 Nathan Blanken
 

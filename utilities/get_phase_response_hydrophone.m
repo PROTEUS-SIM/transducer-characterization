@@ -2,8 +2,8 @@ function phi = get_phase_response_hydrophone(f,method,sensfile)
 % Compute the phase response of the hydrophone assuming the hydrophone is a
 % minimum-phase system.
 %
-% This file is part of the transducer-calibration project, licensed under
-% the GNU Lesser General Public License v3.0 (LGPL-3.0).
+% This file is part of the transducer-characterization project, licensed
+% under the GNU Lesser General Public License v3.0 (LGPL-3.0).
 % See the LICENSE file for further details.
 % Copyright (C) 2025 Nathan Blanken
 

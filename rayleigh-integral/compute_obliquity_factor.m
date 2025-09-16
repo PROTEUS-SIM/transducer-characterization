@@ -14,8 +14,8 @@ function beta = compute_obliquity_factor(...
 % Am. 92 (2), Pt. 1, August 1992. Obtained by applying Eq. 5 to a
 % harmonically oscillating velocity. See https://doi.org/10.1121/1.403990.
 %
-% This file is part of the transducer-calibration project, licensed under
-% the GNU Lesser General Public License v3.0 (LGPL-3.0).
+% This file is part of the transducer-characterization project, licensed
+% under the GNU Lesser General Public License v3.0 (LGPL-3.0).
 % See the LICENSE file for further details.
 % Copyright (C) 2025 Nathan Blanken
 

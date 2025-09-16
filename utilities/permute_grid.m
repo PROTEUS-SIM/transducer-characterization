@@ -8,8 +8,8 @@ function Grid2 = permute_grid(Grid1,permorder)
 %
 % Allowed permutation orders: [1 2 3], [2 3 1], [3 1 2]
 %
-% This file is part of the transducer-calibration project, licensed under
-% the GNU Lesser General Public License v3.0 (LGPL-3.0).
+% This file is part of the transducer-characterization project, licensed
+% under the GNU Lesser General Public License v3.0 (LGPL-3.0).
 % See the LICENSE file for further details.
 % Copyright (C) 2025 Nathan Blanken
 

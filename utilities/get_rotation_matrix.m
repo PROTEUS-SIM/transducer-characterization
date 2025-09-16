@@ -3,8 +3,8 @@ function R = get_rotation_matrix(theta,axis)
 % R = GET_ROTATION_MATRIX(theta,axis) computes the 3D rotation matrix of
 % theta radians about axis (1, 2, or 3).
 %
-% This file is part of the transducer-calibration project, licensed under
-% the GNU Lesser General Public License v3.0 (LGPL-3.0).
+% This file is part of the transducer-characterization project, licensed
+% under the GNU Lesser General Public License v3.0 (LGPL-3.0).
 % See the LICENSE file for further details.
 % Copyright (C) 2025 Nathan Blanken
 

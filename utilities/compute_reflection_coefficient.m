@@ -44,8 +44,8 @@ function Rp = compute_reflection_coefficient(p,medium_attenuating)
 % With A = abs(p1/p2)
 % x = 2*A - 1 +/- 2*sqrt(A^2 - A)
 % 
-% This file is part of the transducer-calibration project, licensed under
-% the GNU Lesser General Public License v3.0 (LGPL-3.0).
+% This file is part of the transducer-characterization project, licensed
+% under the GNU Lesser General Public License v3.0 (LGPL-3.0).
 % See the LICENSE file for further details.
 % Copyright (C) 2025 Nathan Blanken
 

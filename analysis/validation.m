@@ -6,8 +6,8 @@
 % Dependencies:
 % data/PROTEUS-I
 %
-% This file is part of the transducer-calibration project, licensed under
-% the GNU Lesser General Public License v3.0 (LGPL-3.0).
+% This file is part of the transducer-characterization project, licensed
+% under the GNU Lesser General Public License v3.0 (LGPL-3.0).
 % See the LICENSE file for further details.
 % Copyright (C) 2025 Nathan Blanken
 
@@ -43,7 +43,7 @@ PATHS = path_setup_characterization();
 savefolder = 'pressure-maps-PROTEUS';
 
 if rerun
-    % Run PROTEUS pressure field simulation with the new calibration
+    % Run PROTEUS pressure field simulation with the new characterization
     % results
     settingsfile = fullfile(currentDirectory,'GUI_output_parameters.mat');
     main_pressure_field(settingsfile, savefolder);
