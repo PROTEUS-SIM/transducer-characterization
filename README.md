@@ -74,7 +74,7 @@ path_setup_characterization('rmpath')
 ### Experimental data
 
 Download the experimental data of the P4-1 transducer from
-[OneDrive](https://1drv.ms/f/c/fe975ead3b11d6d3/Ek-SK2o5JUNJsiGdrkEMU6EBnS5d8OiVziYacTNIxwcKOw)
+[Zenodo](https://doi.org/10.5281/zenodo.17095584)
 to the folder `data`.
 
 With this experimental data, you will be able to reproduce all results in Chapter 6 of my thesis.
@@ -160,7 +160,7 @@ Additionally,
 a MATLAB structure `medium`, with fields `sound_speed` and `density`, and
 a MATLABstructure `Grid` in [PROTEUS format](https://github.com/PROTEUS-SIM/PROTEUS/blob/main/acoustic-module/define_grid.m) must be provided.
 
-Compare your data format to the data format in `Transmit.mat` from [OneDrive](https://1drv.ms/f/c/fe975ead3b11d6d3/Ek-SK2o5JUNJsiGdrkEMU6EBnS5d8OiVziYacTNIxwcKOw).
+Compare your data format to the data format in `Transmit.mat` from [Zenodo](https://doi.org/10.5281/zenodo.17095584).
 
 **Note for collaborators at the University of Twente:**
 Collaborators acquiring data with the [calibration setup](https://github.com/NathanBlanken/calibration-setup) at the Physics of Fluids group
