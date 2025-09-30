@@ -81,12 +81,12 @@ ax4.XLabel.String = 'k (um^{-1})';
 ax4.YLabel.String = 'w (MHz)';
 ax4.Title.String = '' ;
 
-ax1.FontSize = 8; ax1.FontName = 'Arial';
-ax2.FontSize = 8; ax2.FontName = 'Arial';
-ax3(1).FontSize = 8; ax3(1).FontName = 'Arial';
-ax3(2).FontSize = 8; ax3(2).FontName = 'Arial';
-ax3(3).FontSize = 8; ax3(3).FontName = 'Arial';
-ax4.FontSize = 8; ax4.FontName = 'Arial';
+ax1.FontSize    = 8; ax1.FontName    = 'DejaVu Sans';
+ax2.FontSize    = 8; ax2.FontName    = 'DejaVu Sans';
+ax3(1).FontSize = 8; ax3(1).FontName = 'DejaVu Sans';
+ax3(2).FontSize = 8; ax3(2).FontName = 'DejaVu Sans';
+ax3(3).FontSize = 8; ax3(3).FontName = 'DejaVu Sans';
+ax4.FontSize    = 8; ax4.FontName    = 'DejaVu Sans';
 
 ax1.XLim = [0 12];
 ax1.YLim = [-30 30];
@@ -108,11 +108,11 @@ ax4.YLim = [0 35];
 % Size settings
 %--------------------------------------------------------------------------
 
-figure_height = 1.4; % inch
+figure_height = 1.0; % inch
 figure_width  = 2.1; % inch
 fig1.Position = compute_figure_position(figure_width,figure_height);
 
-figure_height = 1.7; % inch
+figure_height = 1.3; % inch
 figure_width  = 2.1; % inch
 fig2.Position = compute_figure_position(figure_width,figure_height);
 
@@ -123,6 +123,9 @@ fig3.Position = compute_figure_position(figure_width,figure_height);
 figure_height = 1.7; % inch
 figure_width  = 2.1; % inch
 fig4.Position = compute_figure_position(figure_width,figure_height);
+
+ax2.Position(1) = ax1.Position(1);
+ax2.Position(3) = ax1.Position(3);
 
 %--------------------------------------------------------------------------
 % Export figures

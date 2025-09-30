@@ -37,23 +37,23 @@ colorMap(:,2) = colorMap(:,2)/max(colorMap(:,2));
 colors % Load custom colors
 backgroundcolor = 0.1*blue3/255 + 0.9*[1 1 1];
 
-ax4.Children(1).Color = blue1/255;
-ax4.Children(2).Color = red2/255;
-ax4.Children(3).Color = blue2/255;
+ax4.Children(1).Color = red2/255;
+ax4.Children(2).Color = blue2/255;
+ax4.Children(3).Color = blue1/255;
 
 %--------------------------------------------------------------------------
 % Labels
 %--------------------------------------------------------------------------
-legend(ax4,'Old calibration','New calibration','Experiment')
+legend(ax4,'a: PROTEUS I exp.','b: PROTEUS I sim.','c: Current study sim.')
 
 font_size = 8;
 
 fig1.Colormap = colorMap;
 
-ax1.FontName = 'Arial';
-ax2.FontName = 'Arial';
-ax3.FontName = 'Arial';
-ax4.FontName = 'Arial';
+ax1.FontName = 'DejaVu Sans';
+ax2.FontName = 'DejaVu Sans';
+ax3.FontName = 'DejaVu Sans';
+ax4.FontName = 'DejaVu Sans';
 
 ax1.FontSize = font_size;
 ax2.FontSize = font_size;
@@ -72,20 +72,23 @@ ax2.XLabel.String = '';
 ax3.XLabel.String = 'z (mm)';
 ax4.XLabel.String = 'z (mm)';
 
-ax4.XLim = [0 130];
+ax4.XLim = ax3.XLim;
 
 h.Label.FontSize = font_size;
 
 %--------------------------------------------------------------------------
 % Size settings
 %--------------------------------------------------------------------------
-figure_height = 1.7; % inch
-figure_width  = 2.9; % inch
+figure_height = 2.0; % inch
+figure_width  = 3.4; % inch
 fig1.Position = compute_figure_position(figure_width,figure_height);
 
 figure_height = 1.7; % inch
-figure_width  = 2.1; % inch
+figure_width  = 3.4; % inch
 fig4.Position = compute_figure_position(figure_width,figure_height);
+
+ax4.Position(1) = ax3.Position(1);
+ax4.Position(3) = ax3.Position(3);
 
 %--------------------------------------------------------------------------
 % Export figures

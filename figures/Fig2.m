@@ -51,6 +51,8 @@ ax.Children(6).LineWidth = 0.75;
 ax.FontSize = 8;
 ax.FontName = 'Arial';
 
+ax.YTick = [-200 -100 0 100 200];
+
 ax.XLabel.String = 'Time (us)';
 
 lgd.Location = 'southeast';
@@ -59,7 +61,7 @@ lgd.Location = 'southeast';
 % Size settings
 %--------------------------------------------------------------------------
 figure_height = 2.6; % inch
-figure_width  = 5; % inch
+figure_width  = 3.4; % inch
 fig.Position = compute_figure_position(figure_width,figure_height);
 
 %--------------------------------------------------------------------------

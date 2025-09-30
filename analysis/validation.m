@@ -20,14 +20,6 @@ close all
 saveFigure = false;
 rerun = true;
 
-% Simulation B was performed with a lower spatial resolution than
-% simulation A, resulting in a slightly lower output pressure. The
-% undersampling factor compensates for this.
-undersamplingfactor = 1.054;
-fitfactor = 1.14;
-factorA = 1;
-factorB = undersamplingfactor*fitfactor;
-
 waveformIndex = 17;
 centreLineIndexExperiment = 17;
         
@@ -90,9 +82,6 @@ pressureMapExp = squeeze(PA_pk2pk(:,1,:,waveformIndex));
 pressureMapSimA = sensor_data_A_xz.p_max - sensor_data_A_xz.p_min;
 pressureMapSimB = sensor_data_B_xz.p_max - sensor_data_B_xz.p_min;
 
-pressureMapSimA = pressureMapSimA*factorA;
-pressureMapSimB = pressureMapSimB*factorB;
-
 pressureMapSimA = pressureMapSimA/1e3; % Convert to kPa
 pressureMapSimB = pressureMapSimB/1e3; % Convert to kPa
 
@@ -116,6 +105,14 @@ coordinateExp2 = Z;
 coordinateSimA2 = GridA.z*1e3;
 coordinateSimB2 = GridB.z*1e3;
 label2 = 'Z (mm)';
+
+% Compute least-squares fitting factor
+x = transpose(pressureProfileExp);
+y = interp1(coordinateSimB1, pressureProfileSimB, coordinateExp1);
+fitfactor = sum(x.*y)/sum(y.*y);
+
+pressureMapSimB     = pressureMapSimB*fitfactor;
+pressureProfileSimB = pressureProfileSimB*fitfactor;
 
 % Subplot positions:
 positionExp  = 1;
@@ -159,10 +156,10 @@ h.Location = 'south';
 h.Label.String = 'Peak-to-peak pressure (kPa)';
 
 figure
-plot(coordinateSimA1, pressureProfileSimA)
-hold on
-plot(coordinateSimB1, pressureProfileSimB)
 plot(coordinateExp1, pressureProfileExp)
+hold on
+plot(coordinateSimA1, pressureProfileSimA)
+plot(coordinateSimB1, pressureProfileSimB)
 xlabel(label1)
 ylabel('Pressure (kPa)')
 fig4 = gcf;

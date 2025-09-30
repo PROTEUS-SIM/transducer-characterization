@@ -51,9 +51,9 @@ ax3.Children(2).LineWidth = 0.75;
 %--------------------------------------------------------------------------
 % Labels
 %--------------------------------------------------------------------------
-ax1.FontSize = 8; ax1.FontName = 'Arial';
-ax2.FontSize = 8; ax2.FontName = 'Arial';
-ax3.FontSize = 8; ax3.FontName = 'Arial';
+ax1.FontSize = 8; ax1.FontName = 'DejaVu Sans';
+ax2.FontSize = 8; ax2.FontName = 'DejaVu Sans';
+ax3.FontSize = 8; ax3.FontName = 'DejaVu Sans';
 
 ax2.XLabel.String = 'Time (us)';
 ax3.XLabel.String = 'Time (us)';
@@ -61,12 +61,12 @@ ax3.XLabel.String = 'Time (us)';
 %--------------------------------------------------------------------------
 % Size settings
 %--------------------------------------------------------------------------
-figure_height = 2.5; % inch
-figure_width  = 2.5; % inch
+figure_height = 1.5; % inch
+figure_width  = 2.3; % inch
 fig1.Position = compute_figure_position(figure_width,figure_height);
 
 figure_height = 1.5; % inch
-figure_width  = 2.5; % inch
+figure_width  = 2.3; % inch
 fig2.Position = compute_figure_position(figure_width,figure_height);
 fig3.Position = compute_figure_position(figure_width,figure_height);
 

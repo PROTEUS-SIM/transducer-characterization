@@ -53,9 +53,9 @@ ax3.YLim = [-750 750];
 ax4.CLim = [-26000 26000];
 ax4.XLim = [60 67];
 ax5.XLim = [0 10];
-ax5.YLim = [-80 5];
+ax5.YLim = [-80 30];
 ax6.XLim = [0 7];
-ax6.YLim = [-2 2];
+ax6.YLim = [-3 3];
 
 ax2.Children(1).Color = 'black';
 ax3.Children(1).Color = red2/255;
@@ -94,11 +94,12 @@ ax5.YLabel.String = 'Amplitude (dB)';
 ax6.XLabel.String = 'Time (us)';
 ax6.YLabel.String = 'ADCL/Pa/us';
 
-ax2.FontSize = 8; ax2.FontName = 'Arial';
-ax3.FontSize = 8; ax3.FontName = 'Arial';
-ax4.FontSize = 8; ax4.FontName = 'Arial';
-ax5.FontSize = 8; ax5.FontName = 'Arial';
-ax6.FontSize = 8; ax6.FontName = 'Arial';
+fontName = 'DejaVu Sans';
+ax2.FontSize = 8; ax2.FontName = fontName;
+ax3.FontSize = 8; ax3.FontName = fontName;
+ax4.FontSize = 8; ax4.FontName = fontName;
+ax5.FontSize = 8; ax5.FontName = fontName;
+ax6.FontSize = 8; ax6.FontName = fontName;
 
 lgd.Location = 'south';
 grid(ax5,'on');
@@ -112,13 +113,16 @@ fig2.Position = compute_figure_position(figure_width,figure_height);
 fig4.Position = compute_figure_position(figure_width,figure_height);
 
 figure_height = 1.29; % inch
-figure_width  = 1.90; % inch
+figure_width  = 2.1;  % inch
 fig3.Position = compute_figure_position(figure_width,figure_height);
 
-figure_height = 1.7; % inch
+figure_height = 2.1; % inch
 figure_width  = 2.1; % inch
 fig5.Position = compute_figure_position(figure_width,figure_height);
 fig6.Position = fig5.Position;
+
+ax6.Position(1) = ax5.Position(1);
+ax6.Position(3) = ax5.Position(3);
 
 %--------------------------------------------------------------------------
 % Export figures

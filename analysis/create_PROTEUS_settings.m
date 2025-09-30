@@ -63,11 +63,14 @@ Transducer.ElementWidth     = T.Transducer.ElementWidth;
 Transducer.ElementHeight    = T.Transducer.ElementHeight;
 Transducer.ElevationFocus   = T.Transducer.ElevationFocus;
 
+Tmax = 2e-6; % Truncate the impulse responses
 Transducer.ImpulseResponseType = 'Load file';
-load(fullfile(PATHS.Results,'IR_receive_processed.mat'),'IR')
-Transducer.ReceiveImpulseResponse = IR;
-load(fullfile(PATHS.Results,'IR_transmit_processed.mat'),'IR')
-Transducer.TransmitImpulseResponse = IR;
+load(fullfile(PATHS.Results,'IR_receive.mat'),'IR','Fs')
+N = round(Fs*Tmax);
+Transducer.ReceiveImpulseResponse = IR(1:N);
+load(fullfile(PATHS.Results,'IR_transmit.mat'),'IR','Fs')
+N = round(Fs*Tmax);
+Transducer.TransmitImpulseResponse = IR(1:N);
 
 % -------------------------------------------------------------------------
 % Transmit
@@ -105,7 +108,7 @@ Geometry = compute_simulation_domain(Geometry, Transducer, Transmit);
 % -------------------------------------------------------------------------
 
 SimulationParameters = reset_simulation_parameters();
-SimulationParameters.PointsPerWavelength = 4;
+SimulationParameters.PointsPerWavelength = 6;
 SimulationParameters.Solver = '3DG';
 SimulationParameters = update_simulation_parameters(...
     SimulationParameters, Medium, Transmit.CenterFrequency);
