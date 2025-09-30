@@ -1,7 +1,7 @@
 % This script demonstrates how to find the measurement plane orientation
-% (Section 6.2.4 of my thesis).
+% (Section II D of the arXiv preprint).
 %
-% Creates the base plots for Fig. 6.3 of my thesis.
+% Creates the base plots for Fig. 3 of the arXiv preprint.
 %
 % First create the following file with demo_rayleigh_plane.m:
 % data/example_sensor_data.mat

@@ -2,10 +2,11 @@ function VirtualReceiver = determine_virtual_receiver_orientation(...
     y,Fs,medium,Transducer,PATHS,options)
 % This function computes the orientation and position of the virtual
 % receiver. This corresponds to the following step in the blue part of Fig.
-% 6.4 of my thesis:
+% 4 of the arXiv preprint:
 % - Estimate virtual receiver position and orientation
 %
-% Creates the base plots for panels b and c of Fig. 6.7 of my thesis.
+% Creates the base plots for panels b and c of Fig. 7 of the arXiv
+% preprint.
 %
 % input
 % - y:  Receive RF data (Nt-by-Nchannels)

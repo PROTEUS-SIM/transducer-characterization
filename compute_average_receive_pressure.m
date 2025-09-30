@@ -2,11 +2,11 @@ function P = compute_average_receive_pressure(...
     P,Grid,medium,Transducer,options)
 % This function computes the simulated receive pressure after reflection by
 % the metal plate. This corresponds to the following steps in the blue part
-% of Fig. 6.4 of my thesis:
-% - Revert lens delays
+% of Fig. 4 of the arXiv preprint:
+% - Reverse lens delays
 % - Compute average receive pressure
 %
-% The output data corresponds to Figure 6.7d of my thesis.
+% The output data corresponds to Fig. 7d of the arXiv preprint.
 %
 % input
 % - P: time-domain pressure data in sensor plane (Nx-by-Ny-by-Nsamples)
@@ -53,7 +53,7 @@ Transducer = update_transducer(...
 mask = squeeze(sensor.mask);
 mask = repmat(mask,1,1,N);
 
-% Map sensor data onto transducer elements, revert lens delays, and apply
+% Map sensor data onto transducer elements, reverse lens delays, and apply
 % spatial averaging:
 sensor_data.p = reshape(P(mask),[],N);
 P = compute_RF_data(Transducer,sensor_data,sensor_weights,Grid,run_param);

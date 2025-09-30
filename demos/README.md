@@ -13,10 +13,10 @@ This folder contains scripts that demonstrate how to use the Rayleigh integral a
 ### Demos of the angular spectrum method
 - `demo_angular_spectrum.m`
   - Basic demonstration of the angular spectrum method.
-  - Corresponds to Fig. 6.1 of my thesis.
+  - Corresponds to Fig. 1 of the arXiv preprint.
 - `demo_find_angles.m`
-  - This script demonstrates how to find the measurement plane orientation (Section 6.2.4 of my thesis).
-  - Corresponds to Fig. 6.3 of my thesis.
+  - This script demonstrates how to find the measurement plane orientation (Section II D of the arXiv preprint).
+  - Corresponds to Fig. 3 of the arXiv preprint.
   - Run `demo_rayleigh_plane.m` first to generate synthetic measurement data.
 - `demo_angular_spectrum_volume.m`
   - This script demonstrates how the angular spectrum method can be used to rapidly generate the volume of the transducer output field by propagating to closely spaced planes.
@@ -28,12 +28,12 @@ This folder contains scripts that demonstrate how to use the Rayleigh integral a
 - `comparison_rayleigh_angular_spectrum.m`
   - Comparison of a Rayleigh integral computation and an angular spectrum computation (one-dimensional cross section profile).
 - `comparison_propagation_methods.m`
-  - This script shows a comparison of propagation methods and source presentations as described in Section 6.2.3 of my thesis.
+  - This script shows a comparison of propagation methods and source presentations as described in Section II C of the arXiv preprint.
   - Compares Rayleigh integral, angular spectrum, and k-Wave.
   - This script requires installation of [k-Wave](https://github.com/PROTEUS-SIM/PROTEUS?tab=readme-ov-file#k-wave).
 - `comparison_propagation_methods_plot.m`
   - Visualize and compare the data generated with `comparison_propagation_methods.m`.
-  - Corresponds to Fig. 6.2 of my thesis.
+  - Corresponds to Fig. 2 of the arXiv preprint.
 
 ### PROTEUS simulation settings for quick setup
 

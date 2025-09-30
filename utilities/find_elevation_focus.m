@@ -6,7 +6,7 @@ function [F,yc] = find_elevation_focus(P,Parameters)
 % Pfft is temporal frequency domain pressure or velocity data
 % (Nx-by-Ny-by-Nfrequencies).
 %
-% See Eq. 6.48 of my thesis
+% See Eq. 48 of the arXiv preprint
 %
 % Parameters, struct with fields:
 % frequencies: full frequency array

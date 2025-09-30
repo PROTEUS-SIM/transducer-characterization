@@ -2,7 +2,7 @@
 % rapidly generate the volume of the transducer output field by propagating
 % to closely spaced planes.
 %
-% This result is not included in my thesis.
+% This result is not included in the arXiv preprint.
 %
 % This file is part of the transducer-characterization project, licensed
 % under the GNU Lesser General Public License v3.0 (LGPL-3.0).

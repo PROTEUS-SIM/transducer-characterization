@@ -1,6 +1,6 @@
 % This script creates the simulated sensor data that is used in
-% demo_find_angles.m, which, in turn, is used to generate Fig. 6.3 of my
-% thesis.
+% demo_find_angles.m, which, in turn, is used to generate Fig. 3 of the
+% arXiv preprint.
 %
 % Output:
 % data/example_sensor_data.mat

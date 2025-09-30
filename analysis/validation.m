@@ -1,7 +1,7 @@
 % Validation of the virtual transducer on independent experimental data
-% (Section 6.3.3 of my thesis).
+% (Section III C of the arXiv preprint).
 %
-% Creates the base plots for Fig. 6.8 of my thesis.
+% Creates the base plots for Fig. 8 of the arXiv preprint.
 %
 % Dependencies:
 % data/PROTEUS-I

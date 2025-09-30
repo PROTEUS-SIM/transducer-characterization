@@ -2,7 +2,7 @@ function [IR,Fs] = compute_transmit_impulse_response(p,Fsp,y,Fsy,...
     medium,ScanPlane,Transducer,PATHS,options)
 % This function estimates computes the transmit impulse response.
 %
-% Creates the base plot for Fig. 6.6d of my thesis.
+% Creates the base plot for Fig. 6d of the arXiv preprint.
 %
 % input
 % - p:   average transmit pressure data (Nsamples-by-1)

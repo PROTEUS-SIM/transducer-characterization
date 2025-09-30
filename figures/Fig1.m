@@ -1,4 +1,4 @@
-% Figure formatting for Fig. 6.1.
+% Figure formatting for Fig. 1.
 % This file is part of the transducer-characterization project, licensed
 % under the GNU Lesser General Public License v3.0 (LGPL-3.0).
 % See the LICENSE file for further details.

@@ -1,6 +1,6 @@
 % Demonstration of the angular spectrum method.
 %
-% Creates the base plots for Fig. 6.1 of my thesis.
+% Creates the base plots for Fig. 1 of the arXiv preprint.
 %
 % This file is part of the transducer-characterization project, licensed
 % under the GNU Lesser General Public License v3.0 (LGPL-3.0).

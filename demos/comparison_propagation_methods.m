@@ -1,12 +1,12 @@
 % This script shows a comparison of propagation methods and source
-% presentations as described in Section 6.2.3 of my thesis.
+% presentations as described in Section II C of the arXiv preprint.
 %
 %
 % Run this script twice, once with sourceType = 'monopole' and once with
 % sourceType = 'dipole'.
 %
-% Run comparison_propagation_methods_plot.m to recreate Fig. 6.2 of my
-% thesis.
+% Run comparison_propagation_methods_plot.m to recreate Fig. 2 of the arXiv
+% preprint.
 %
 % NOTE: this scripts requires the installation of k-Wave. Adjust the
 % variable PATHS.kWave in path_setup_characterization to match the location

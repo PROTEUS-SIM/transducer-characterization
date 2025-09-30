@@ -2,7 +2,8 @@
 % dipole (velocity) representation gives the best representation of the
 % experimentally observed data.
 %
-% The result is inconclusive, as stated in Section 6.4.3 of my thesis:
+% The result is inconclusive, as stated in Section IV C of the arXiv
+% preprint:
 % "However, the edge waves in the hydrophone data were too obscured by
 % spurious waves and noise to provide a definitive answer to this
 % question."
@@ -10,7 +11,7 @@
 % Run this script three times: with simtypes 'pressure', 'velocity', and
 % 'data'.
 %
-% The resulting figure is not included in my thesis.
+% The resulting figure is not included in the arXiv preprint.
 %
 % Dependencies:
 % data/TransmitData.mat

@@ -1,7 +1,7 @@
 % Comparison of a rayleigh integral computation and an angular spectrum
 % computation (one-dimensional cross section profile).
 %
-% This demonstration is not included in my thesis.
+% This demonstration is not included in the arXiv preprint.
 %
 % This file is part of the transducer-characterization project, licensed
 % under the GNU Lesser General Public License v3.0 (LGPL-3.0).

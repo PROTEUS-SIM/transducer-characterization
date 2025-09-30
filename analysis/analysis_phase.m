@@ -1,9 +1,9 @@
 % This script investigates the factors that may influence the measured
 % phase response of the transducer, including the phase response of the
 % hydrophone and the phase response of the analog filter. The results are
-% described in Section 6.4.2 of my thesis.
+% described in Section IV B of the arXiv preprint.
 %
-% Creates the base plots for Fig. 6.10 of my thesis.
+% Creates the base plots for Fig. 10 of the arXiv preprint.
 %
 % Dependencies:
 % results/IR_transmit.mat

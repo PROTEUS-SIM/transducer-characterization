@@ -1,8 +1,8 @@
 function rayleigh_figure(sensor,source,...
     Grid,medium,SensorPlane,PATHS,options)
-% Creates the base plots for Fig. 6.5 of my thesis. Set options.saveFigure
-% = true and run twice: with options.plotType = 'abs' and options.plotType
-% = 'angle'.
+% Creates the base plots for Fig. 5 of the arXiv preprint. Set
+% options.saveFigure = true and run twice: with options.plotType = 'abs'
+% and options.plotType = 'angle'.
 %
 % This file is part of the transducer-characterization project, licensed
 % under the GNU Lesser General Public License v3.0 (LGPL-3.0).

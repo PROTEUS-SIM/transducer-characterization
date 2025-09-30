@@ -2,8 +2,8 @@
 %hydrophone data to virtual transducer
 %
 % This script is a demonstration of the full characterization pipeline
-% shown in Fig. 6.4 of my thesis. Running the script reproduces the results
-% shown in Section 6.3.
+% shown in Fig. 4 of the arXiv preprint. Running the script reproduces the
+% results shown in Section III.
 %
 % It is possible (and recommended) to run only a part of this pipeline,
 % save the data, and resume later through the use of checkpoints. See the
@@ -318,13 +318,13 @@ end
 VirtualReceiver.rmin = rmin;
 
 %==========================================================================
-% Revert lens delays and compute average receive pressure
+% Reverse lens delays and compute average receive pressure
 %==========================================================================
 
 % Convert frequency domain data to time domain data
 P = ifft(conj(P),[],3,'symmetric');
 
-fprintf(['\nReverting lens delays and '...
+fprintf(['\nReversing lens delays and '...
     'computing average receive pressure ...\n'])
 P = compute_average_receive_pressure(P,Grid,medium,Transducer,options);
 

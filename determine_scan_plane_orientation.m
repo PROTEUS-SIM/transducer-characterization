@@ -22,7 +22,7 @@ function ScanPlane = determine_scan_plane_orientation(P,Grid,medium)
 % One row per search range
 % Search between 1.0 and 4.5 MHz, but do not include the frequencies
 % between 3.2 and 3.5 MHz to filter out the spurious mode of oscillation
-% (see Section 6.3.4 of my thesis).
+% (see Section III D of the arXiv preprint).
 freqRange = [1.0 3.2; 3.5 4.5]*1e6;
 
 % Estimated transducer width

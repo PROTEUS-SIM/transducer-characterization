@@ -1,16 +1,16 @@
 function [P,ScanPlane,Transducer] = estimate_model_parameters(...
     Y,Grid,medium,ScanPlane,PATHS,options)
 % This function estimates transducer model parameters. This function
-% corresponds to the following parts of Fig. 6.4 of my thesis:
+% corresponds to the following parts of Fig. 4 of the arXiv preprint:
 % - Estimate (x0, y0); Estimate transducer dimensions W and H
 % - Estimate lens focus F
-% - Revert lens delays
+% - Reverse lens delays
 % - Compute average transmit velocity
 % - Updated x0, y0, z0
 % - Determine z0
 % - Dimensions W, H; Focus F
 %
-% Creates the base plots for Fig. 6.6a-c of my thesis.
+% Creates the base plots for Fig. 6a-c of the arXiv preprint.
 %
 % Input:
 % - Y: frequency-domain pressure or velocity data (depending on
@@ -34,7 +34,7 @@ function [P,ScanPlane,Transducer] = estimate_model_parameters(...
 % Frequency range (Hz) for finding the elevation focus One row per search
 % range Scan between 0 and 5 MHz, but do not include the frequencies
 % between 3.2 and 3.8 MHz to filter out the spurious mode of oscillation
-% (see Section 6.3.4 of my thesis).
+% (see Section III D of the arXiv preprint).
 freqRange = [0.1 3.2; 3.8 5]*1e6;
 
 displayUnit = 1e-3; % (m)

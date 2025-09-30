@@ -1,8 +1,8 @@
 % This script demonstrates that the angular spectrum method can also be
 % applied to an inclined sensor plane through the use of interpolation.
 %
-% Figure not shown in my thesis, but the result is briefly mentioned in
-% Section 6.2.2.
+% Figure not shown in the arXiv preprint, but the result is briefly
+% mentioned in Section II B.
 %
 % NOTE: If sufficient RAM is available, change the value of maxMemory in
 % update_sensor_fast.m (part of the PROTEUS toolbox) to at least 3 GB.

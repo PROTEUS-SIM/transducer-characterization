@@ -1,6 +1,6 @@
 # Figure formatting and exporting
 
-This folder contains scripts for recreating the figures of Chapter 6 in my thesis.
+This folder contains scripts for recreating the figures of the [arXiv preprint](https://arxiv.org/abs/2509.22090).
 
 These scripts only perform figure formatting and exporting.
 

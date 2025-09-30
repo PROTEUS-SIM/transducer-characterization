@@ -125,7 +125,7 @@ end
 % multiplied by dy*dz (not dx*dy or dz*dx), regardless of the orientation.
 % See: https://github.com/PROTEUS-SIM/PROTEUS/blob/
 % main/acoustic-module/get_transducer_integration_points.m
-% Also see Eqs. 6.31 and 6.32 in my thesis.
+% Also see Eqs. 31 and 32 in the arXiv preprint.
 dA = Grid.dy*Grid.dz*Transducer.integration_weights;
 source.weights = dA*ones(size(source.points,1),1);
 

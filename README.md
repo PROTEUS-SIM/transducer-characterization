@@ -4,9 +4,9 @@
 
 Nathan Blanken
 
-This repository contains the code for
-[Chapter 6](https://ris.utwente.nl/ws/portalfiles/portal/469012070/thesis-Nathan-Blanken-final.pdf#chapter.6)
-of my thesis (doi: [10.3990/1.9789036564052](https://doi.org/10.3990/1.9789036564052)).
+This repository contains the code for the preprint
+[arXiv:2509.22090](https://arxiv.org/abs/2509.22090)
+(doi: [10.48550/arXiv.2509.22090](https://doi.org/10.48550/arXiv.2509.22090)).
 
 ## System requirements
 
@@ -47,7 +47,7 @@ installation of PROTEUS, including k-Wave, geometry data, flow solver, and vtkTo
 if you are only going use it for transducer characterization.
 
 **Note (optional):** installation of [k-Wave](https://github.com/PROTEUS-SIM/PROTEUS?tab=readme-ov-file#k-wave) is required
-if you intend to reproduce Fig. 6.2 of my thesis.
+if you intend to reproduce Fig. 2 or Fig. 8 of the arXiv preprint.
 
 **Note (optional):** the branch `transducer-calibration` of the PROTEUS repository introduces the function [`update_sensor_fast`](https://github.com/PROTEUS-SIM/PROTEUS/blob/transducer-calibration/acoustic-module/update_sensor_fast.m), which is an upgrade of [`update_sensor`](https://github.com/PROTEUS-SIM/PROTEUS/blob/transducer-calibration/acoustic-module/update_sensor.m). To unlock the full potential of this new function, increase the value of `maxMemory` to a higher value that is still supported by your system's RAM. See [`demos`](demos) for further details.
 
@@ -77,22 +77,22 @@ Download the experimental data of the P4-1 transducer from
 [Zenodo](https://doi.org/10.5281/zenodo.17095584)
 to the folder `data`.
 
-With this experimental data, you will be able to reproduce all results in Chapter 6 of my thesis.
+With this experimental data, you will be able to reproduce all results in the arXiv preprint.
 Reproducing these results is recommended as a tutorial.
 
 **Note:** the folder `PROTEUS-I` only needs to be downloaded,
-if you want to reproduce Fig. 6.8 of my thesis.
+if you want to reproduce Fig. 8 of the arXiv preprint.
 This folder contains the data from Fig. 4 of [PROTEUS Part I](https://ieeexplore.ieee.org/document/10597664).
 
 ## Overview of the repository
 
 - 📂 [`analysis`](analysis) Analysis of the characterization results.
-  Corresponds to Sections 6.3.3, 6.3.4, and 6.4 of my thesis.
+  Corresponds to Sections III C, III D, and IV of the arXiv preprint.
 - 📂 `angular-spectrum` Tools related to the angular spectrum method.
 - 📂 `data` Experimental data.
 - 📂 [`demos`](demos) Demonstrations of the functions in 📂 `angular-spectrum`, and 📂 `rayleigh-integral`.
-  These demonstrations correspond to Section 6.2 of my thesis.
-- 📂 [`figures`](figures) Figure formatting scripts used for the figures in my thesis.
+  These demonstrations correspond to Section II of the arXiv preprint.
+- 📂 [`figures`](figures) Figure formatting scripts used for the figures in the arXiv preprint.
   The readme in this folder contains an overview of how each figure was generated.
 - 📂 `rayleigh-integral` Tools related to the Rayleigh integral.
 - 📂 `results` Output folder for characterization results
@@ -104,9 +104,9 @@ This folder contains the data from Fig. 4 of [PROTEUS Part I](https://ieeexplore
 
 The script [`main_pipeline.m`](main_pipeline.m) in the root directory is
 a demonstration of the full characterization pipeline.
-It is an implementation of Fig. 6.4 in my thesis.
+It is an implementation of Fig. 4 in the arXiv preprint.
 The other functions in the root folder are called by `main_pipeline.m` and
-correspond to one or multiple steps in Fig. 6.4.
+correspond to one or multiple steps in Fig. 4.
 
 The file `main_pipeline.m` returns the transmit and receive impulse responses
 and the transducer properties in a format that can be directly loaded into PROTEUS.
@@ -119,7 +119,7 @@ Run `help main_pipeline.m` for further details.
 
 ### Other demonstrations
 
-If you are not so familiar with the theory presented in Section 6.2 of my thesis,
+If you are not so familiar with the theory presented in Section II of the arXiv preprint,
 you are encouraged to check out the demos in [`demos`](demos) first.
 
 ### Coordinate system
@@ -176,25 +176,22 @@ This code repository is licensed under the GNU Lesser General Public License v3.
 See the [LICENSE](./LICENSE) file for further details.
 GitHub will lists an overview of permissions, limitations, and conditions on top of the page.
 
-If you use (parts of) the code, please consider citing my thesis:
+If you use (parts of) the code, please consider citing the arXiv preprint:
 
-Nathan Blanken,
-_Super-resolution ultrasound imaging:
-Microbubbles, neural networks, and simulations_,
-Ph.D. dissertation,
-University of Twente,
-Enschede,
-2024,
-ISBN: 978-90-365-6404-5,
-DOI: [10.3990/1.9789036564052](https://doi.org/10.3990/1.9789036564052).
+N. Blanken, M. Versluis, and G. Lajoinie,
+_Characterization and virtualization of a medical ultrasound transducer_ (2025),
+arXiv:2509.22090.
 
 ```
-@phdthesis{Blanken2024,
-    author    = {Nathan Blanken},
-    doi       = {10.3990/1.9789036564052},
-    isbn      = {978-90-365-6404-5},
-    school    = {University of Twente},
-    title     = {Super-resolution ultrasound imaging: Microbubbles, neural networks, and simulations},
-    year      = 2024
+@misc{Blanken2025,
+    author = {Nathan Blanken and Michel Versluis and Guillaume Lajoinie},
+    doi    = {10.48550/arXiv.2509.22090},
+    eprint = {2509.22090},
+    title  = {Characterization and virtualization of a medical ultrasound transducer},
+    url    = {https://arxiv.org/abs/2509.22090},
+    year   = 2025,
+    archivePrefix = {arXiv},
+    primaryClass  = {physics.med-ph},
 }
+
 ```

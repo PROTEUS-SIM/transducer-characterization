@@ -1,12 +1,13 @@
 function [IR,Fs] = compute_receive_impulse_response(p,Fsp,y,Fsy,...
     medium,VirtualReceiver,Transducer,PATHS,options)
 % This function computes the receive impulse response of the transducer.
-% This corresponds to the following step in the blue part of Fig. 6.4 of my
-% thesis:
+% This corresponds to the following step in the blue part of Fig. 4 of the
+% arXiv preprint:
 % - Compute receive impulse response
-% The results are described in Section 6.3.2 of my thesis.
+% The results are described in Section III B of the arXiv preprint.
 %
-% Creates the base plots for panels d, e, and f of Fig. 6.7 of my thesis.
+% Creates the base plots for panels d, e, and f of Fig. 7 of the arXiv
+% preprint.
 %
 % input
 % - p:   average receive pressure data (Nchannels-by-Nsamples)
@@ -179,7 +180,7 @@ noise_level_p = 10^(noise_level_p/20)*max(abs(P));
 SNR_y = (abs(Y)/noise_level_y).^2;
 SNR_p = (abs(P)/noise_level_p).^2;
 
-% Modified Wiener deconvolution. See Eq. 6.52 of my thesis.
+% Modified Wiener deconvolution. See Eq. 52 of the arXiv preprint.
 H = Y./P./(1 + 1./SNR_y + 1./SNR_p);
 
 HdB = 20*log10(abs(H)./max(abs(H)));

@@ -1,7 +1,7 @@
 % Reorganise the experimental data for use in this repository.
 %
 % This script is specific to the experimental setup that was used for
-% Chapter 6 of my thesis, see Section 6.2.5 Data acquisition.
+% the arXiv preprint, see Section II E Data acquisition.
 %
 % This script is aimed at colleagues working at the Physics of Fluids
 % group, but may be useful to other users as well, as it shows how

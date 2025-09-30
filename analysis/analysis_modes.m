@@ -1,7 +1,7 @@
 % This script allows to investigate the spurious mode of oscillation. The
-% results are described in Section 6.3.4 of my thesis.
+% results are described in Section III D of the arXiv preprint.
 %
-% Creates the base plots for Fig. 6.9 of my thesis.
+% Creates the base plots for Fig. 9 of the arXiv preprint.
 %
 % Dependencies:
 % results/Transducer
