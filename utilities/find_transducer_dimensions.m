@@ -44,7 +44,7 @@ Parameters.Axis = 2;
 [a,H,yc,E] = find_fit(Y,Parameters);
 
 fprintf('RMS error:         %5.2f %%\n',  E/a*100)
-fprintf('Transducer width:  %5.2f mm\n',  H*1e3)
+fprintf('Transducer height: %5.2f mm\n',  H*1e3)
 fprintf('Transducer centre: %5.2f mm\n\n',yc*1e3)
 
 end
