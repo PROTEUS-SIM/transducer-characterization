@@ -1,8 +1,10 @@
 # Characterization and virtualization of a medical ultrasound transducer
 
-[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](LICENSE)
+[![arXiv](https://img.shields.io/badge/arXiv-2509.22090-b31b1b.svg)](https://arxiv.org/abs/2509.22090)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17095585.svg)](https://doi.org/10.5281/zenodo.17095585)
+[![License](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](LICENSE)
 
-Nathan Blanken
+Nathan Blanken [![ORCID](https://orcid.org/sites/default/files/images/orcid_16x16.png)](https://orcid.org/0000-0002-5204-6313)
 
 This repository contains the code for the preprint
 [arXiv:2509.22090](https://arxiv.org/abs/2509.22090)
