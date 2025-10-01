@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Blanken"
+  given-names: "Nathan"
+  orcid: "https://orcid.org/0000-0002-5204-6313"
+title: "transducer-characterization"
+url: "https://github.com/PROTEUS-SIM/transducer-characterization"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Blanken"
+    given-names: "Nathan"
+    orcid: "https://orcid.org/0000-0002-5204-6313"
+  - family-names: "Versluis"
+    given-names: "Michel"
+    orcid: "https://orcid.org/0000-0002-2296-1860"
+  - family-names: "Lajoinie"
+    given-names: "Guillaume"
+    orcid: "https://orcid.org/0000-0002-8226-7301"
+  doi: 10.48550/arXiv.2509.22090
+  url: https://arxiv.org/abs/2509.22090
+  title: "Characterization and virtualization of a medical ultrasound transducer"
+  year: 2025
