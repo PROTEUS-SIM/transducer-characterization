@@ -12,7 +12,7 @@ This repository contains the code for the preprint
 
 - Installation of MATLAB is required. The use of MATLAB 2019b or later is recommended.
 - Although the characterization pipeline can be run on a CPU, the use of a GPU with at least 8 GB of dedicated memory is recommended to speed up the Rayleigh integral computations.
-- To run the code on GPU, the Signal Processing Toolbox from MATLAB is required.
+- To run the code on GPU, the Parallel Computing Toolbox™ from MATLAB is required.
 
 
 ## Installation
